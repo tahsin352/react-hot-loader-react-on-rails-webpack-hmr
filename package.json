@@ -7,7 +7,8 @@
     "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
     "prop-types": "^15.7.2",
     "react": "^16.8.5",
-    "react-dom": "^16.8.5",
+    "react-dom": "npm:@hot-loader/react-dom",
+    "react-hot-loader": "^4.8.0",
     "react-on-rails": "11.2.2"
   },
   "devDependencies": {
