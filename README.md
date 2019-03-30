@@ -47,6 +47,6 @@ Now rails + react + react_on_rails + webpack + react_hot_loader works perfectly.
 Our expertise <a href="http://garazlab.com/2019/03/10/expert-advice-free-technical-consulting-for-online-business-software-website-application-development/" target="_blank">here</a>. 
 You can buy our popular products from <a href="https://garazlab.com/shop" target="_blank">GarazLab</a>
 
-<a href="http://garazlab.com/product/real-time-health-data-from-every-where/" target="_blank">Real-time medical healthcare IoT app</a>. 
-<a href="http://garazlab.com/product/wp-firebase-chat-single-user-unlimited-group-realtime-messaging-with-file-share/" target="_blank">Firebase real-time chat app</a> .
-<a href="http://garazlab.com/product/wp-mikrotik-iot-plugin-for-realtime-network-management/" target="_blank">Network manager app </a>. 
+<div><a href="http://garazlab.com/product/real-time-health-data-from-every-where/" target="_blank">Real-time medical healthcare IoT app</a>.</div> 
+<div><a href="http://garazlab.com/product/wp-firebase-chat-single-user-unlimited-group-realtime-messaging-with-file-share/" target="_blank">Firebase real-time chat app</a> .</div>
+<div><a href="http://garazlab.com/product/wp-mikrotik-iot-plugin-for-realtime-network-management/" target="_blank">Network manager app </a>. </div>
