@@ -2,15 +2,15 @@
 react-hot-loader integration with react-on-rails and webpacker HMR with example
 
 we will use webpacker hmr 
-
+<pre>
 if (module.hot) {
   module.hot.accept('../bundles/HelloWorld/components/Search.jsx', () => {
     render(require('../bundles/HelloWorld/components/Search.jsx').default);
   });
 }
-
+</pre>
 It reflects the changes that we made on the codebase in the browser without any page refresh. But it will lost the state of the application. So, we need to use react-hot-loader to keep the state in the app intact.
-
+<pre>
 //client/bundles/HelloWorld/components/Hello.jsx
 import React from 'react';
 import { hot } from 'react-hot-loader/root';
@@ -20,7 +20,7 @@ class Hello extends React.Component {
       this.state = { text: '' };
       this.handleChange = this.handleChange.bind(this);
     }
-  
+  </pre>
     speak = function() {
       alert('I can speak gjhgdjs');
     };
