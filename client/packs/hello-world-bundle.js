@@ -2,7 +2,7 @@
 import ReactOnRails from 'react-on-rails';
 
 import HelloWorld from '../bundles/HelloWorld/components/HelloWorld';
-import Search from '../bundles/HelloWorld/components/Search';
+import WithSearch from '../bundles/HelloWorld/components/WithSearch';
 import Hello from '../bundles/HelloWorld/components/Hello';
 
 if (module.hot) {
@@ -14,6 +14,6 @@ if (module.hot) {
 // This is how react_on_rails can see the HelloWorld in the browser.
 ReactOnRails.register({
   HelloWorld,
-  Search,
+  WithSearch,
   Hello,
 });

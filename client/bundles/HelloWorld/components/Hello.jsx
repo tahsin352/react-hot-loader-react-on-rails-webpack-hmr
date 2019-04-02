@@ -2,9 +2,9 @@
 import React from 'react';
 import { hot } from 'react-hot-loader/root';
 class Hello extends React.Component {
-    constructor(props) {
+    constructor(props, railsContext) {
       super(props);
-      this.state = { text: '' };
+      this.state = { text: '' , rt: railsContext.href};
       this.handleChange = this.handleChange.bind(this);
     }
   
@@ -18,7 +18,7 @@ class Hello extends React.Component {
   
     render() {
       return (<div>
-        <h1>23Hello World</h1>
+        <h1>23Hello World {this.state.text}</h1>
         <input type="text" value={this.state.text} onChange={this.handleChange}/>
         <br/>
         <br/>
