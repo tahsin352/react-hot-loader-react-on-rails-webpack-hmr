@@ -65,17 +65,14 @@ export default WithSearch(SearchContext);
 import React from 'react';
 import { hot } from 'react-hot-loader/root';
 const SearchContext = (props) => (
-
+</pre>
   <div className="ui raised segment no padding">
-  </pre>
     Your locale is {props.railsContext.i18nLocale}.<br/>
     Hello, {props.name}!
-    <pre>
   </div>
-
+<pre>
 );
-
-export default hot(SearchContext)
+export default hot(SearchContext);
 </pre>
 <h3>Contact with Us</h3>
 Our expertise <a href="http://garazlab.com/2019/03/10/expert-advice-free-technical-consulting-for-online-business-software-website-application-development/" target="_blank">here</a>. 
