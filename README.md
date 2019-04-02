@@ -43,6 +43,34 @@ export default hot(Hello);
 
 Now rails + react + react_on_rails + webpack + react_hot_loader works perfectly.
 
+<h4>HOC with railsContext</h4>
+railsContext is available for each react component as 2nd parameter. But when we implement HOC, then it return empty. Coz, only props can be passed from parent component to child component. So, if you want to pass railsContext to child component, then you need to pass it as props like below:
+
+<pre>
+//client/bundles/HelloWorld/components/WithSearch.jsx
+import React from 'react';
+import SearchContext from './SearchContext';
+const WithSearch = (WrappedComponent) => (props, railsContext) => {
+    return (
+      <div>
+        <WrappedComponent {...{...props, railsContext}} />
+      </div>
+    )
+  }
+export default WithSearch(SearchContext);
+
+//client/bundles/HelloWorld/components/SearchContext.jsx
+import React from 'react';
+import { hot } from 'react-hot-loader/root';
+const SearchContext = (props) => (
+  <div className="ui raised segment no padding">
+    Your locale is {props.railsContext.i18nLocale}.<br/>
+    Hello, {props.name}!
+  </div>
+);
+
+export default hot(SearchContext)
+</pre>
 <h3>Contact with Us</h3>
 Our expertise <a href="http://garazlab.com/2019/03/10/expert-advice-free-technical-consulting-for-online-business-software-website-application-development/" target="_blank">here</a>. 
 You can buy our popular products from <a href="https://garazlab.com/shop" target="_blank">GarazLab</a>
