@@ -52,9 +52,11 @@ import React from 'react';
 import SearchContext from './SearchContext';
 const WithSearch = (WrappedComponent) => (props, railsContext) => {
     return (
+</pre>
       <div>
         <WrappedComponent {...{...props, railsContext}} />
       </div>
+ <pre>     
     )
   }
 export default WithSearch(SearchContext);
@@ -63,13 +65,14 @@ export default WithSearch(SearchContext);
 import React from 'react';
 import { hot } from 'react-hot-loader/root';
 const SearchContext = (props) => (
+</pre>
   <div className="ui raised segment no padding">
     Your locale is {props.railsContext.i18nLocale}.<br/>
     Hello, {props.name}!
   </div>
+<pre>
 );
-
-export default hot(SearchContext)
+export default hot(SearchContext);
 </pre>
 <h3>Contact with Us</h3>
 Our expertise <a href="http://garazlab.com/2019/03/10/expert-advice-free-technical-consulting-for-online-business-software-website-application-development/" target="_blank">here</a>. 
