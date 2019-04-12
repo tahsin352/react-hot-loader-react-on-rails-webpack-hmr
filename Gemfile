@@ -55,12 +55,22 @@ end
 group :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '>= 2.15'
-  gem 'selenium-webdriver'
+  gem "capybara-screenshot"
+  gem "coveralls", require: false
+  # install trouble with updated
+  # gem "capybara-webkit"
   # Easy installation and use of chromedriver to run system tests with Chrome
-  gem 'chromedriver-helper'
+  #gem 'chromedriver-helper'
+  gem 'webdrivers', '~> 3.0'
+  gem "equivalent-xml", github: "mbklein/equivalent-xml"
+  gem "generator_spec"
+  gem "launchy"
+  gem "rspec-rails"
+  gem "rspec-retry"
+  gem 'selenium-webdriver'
 end
 
-gem 'react_on_rails', '11.1.4'
+gem 'react_on_rails', path: '/Library/WebServer/Documents/railsroot/react_on_rails'
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
